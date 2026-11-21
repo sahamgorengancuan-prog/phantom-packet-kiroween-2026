@@ -2,6 +2,10 @@
 
 A new **Kiroween 2026 / Resurrection** entry built with Kiro CLI. A browser-only reinterpretation of classic BBS/FidoNet store-and-forward discussion packets, with a haunted-terminal visual identity, five rooms, local posts/replies, sample fictional messages, and integrity-checked packet import/export. **No user account, external API, server-side storage or real emergency dispatch.**
 
+## Judge walkthrough
+
+[Open the live demo](https://cerex.site/judge/phantom-packet/) with no login, key or installation. Choose a room, post a fictional message, and export a packet. After the service worker has installed, disconnect and reload to check that the local board and post remain available. The [108-second walkthrough](https://youtu.be/3hoidBZUu6s) shows the working interface.
+
 ## Run and test
 
 Requires Python 3 (static host), Node 22 (tests), and a current Chromium/Firefox/Safari browser.
@@ -41,6 +45,6 @@ The new application was commissioned on **20 November 2026** via authenticated *
 
 ## Kiroween submission status
 
-Category: **Resurrection**. Built during the permitted period (after October 30, 2026). Functional app and tests are real. The [public demo video](https://youtu.be/3hoidBZUu6s) is 108 seconds. The public GitHub repository and final Devpost submission are pending. Rules require a public MIT-licensed GitHub repository including root `.kiro`, and a public demo video below 3 minutes showing this working application. See `SUBMISSION_CHECKLIST.md`.
+Category: **Resurrection**. Built during the permitted period (after October 30, 2026). Functional app and tests are real. The [public demo video](https://youtu.be/3hoidBZUu6s) is 108 seconds. This is the public source repository, with an MIT license and the Kiro specifications at the root. Final Devpost submission is pending. Rules require a public MIT-licensed GitHub repository including root `.kiro`, and a public demo video below 3 minutes showing this working application. See `SUBMISSION_CHECKLIST.md`.
 
 MIT-licensed. This contest entry and its spooky content are not affiliated with the organizers of Kiroween, FidoNet, or any emergency service.
