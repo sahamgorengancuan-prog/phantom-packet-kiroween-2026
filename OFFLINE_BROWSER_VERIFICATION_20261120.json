@@ -1,0 +1,38 @@
+{
+  "checked_at": "2026-11-20T14:04:57+07:00",
+  "url": "https://cerex.site/judge/phantom-packet/",
+  "browser": "Chrome/154.0.8037.97",
+  "initial": {
+    "rooms": 5,
+    "online": true,
+    "path": "/judge/phantom-packet/",
+    "worker": "?v=6",
+    "cachedEntry": true,
+    "messagePersisted": false
+  },
+  "offline": {
+    "rooms": 5,
+    "online": false,
+    "path": "/judge/phantom-packet/",
+    "worker": "?v=6",
+    "cachedEntry": true,
+    "messagePersisted": false
+  },
+  "offline_after_post_reload": {
+    "rooms": 5,
+    "online": false,
+    "path": "/judge/phantom-packet/",
+    "worker": "?v=6",
+    "cachedEntry": true,
+    "messagePersisted": true
+  },
+  "online_again": {
+    "rooms": 5,
+    "online": true,
+    "path": "/judge/phantom-packet/",
+    "worker": "?v=6",
+    "cachedEntry": true,
+    "messagePersisted": true
+  },
+  "passed": true
+}

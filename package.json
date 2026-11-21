@@ -1,0 +1,20 @@
+{
+  "name": "phantom-packet",
+  "version": "1.0.0",
+  "description": "PHANTOM PACKET - Offline-first BBS/FidoNet style message PWA with spooky retro design",
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/**/*.test.mjs tests/**/*.test.mjs",
+    "test:watch": "node --test --watch test/**/*.test.mjs tests/**/*.test.mjs"
+  },
+  "keywords": [
+    "bbs",
+    "fido-net",
+    "pwa",
+    "offline-first",
+    "retro",
+    "spooky"
+  ],
+  "author": "Kiroween 2026 Devpost Submission",
+  "license": "MIT"
+}

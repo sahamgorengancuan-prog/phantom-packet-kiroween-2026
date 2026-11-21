@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="PHANTOM PACKET - Offline-first BBS revival PWA with retro design" />
+  <meta name="theme-color" content="#001a00" />
+  <title>PHANTOM PACKET - BBS Revival</title>
+  <link rel="manifest" href="./manifest.json" />
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>PHANTOM PACKET</h1>
+      <p>▓ Offline-first BBS Revival ▓ Store-and-Forward Message Network ▓</p>
+    </header>
+
+    <div class="layout">
+      <div class="sidebar">
+        <div class="sidebar-section">
+          <h3>📍 Rooms</h3>
+          <div class="rooms-list"></div>
+        </div>
+
+        <div class="sidebar-section">
+          <h3>⚙️ Menu</h3>
+          <p class="demo-disclaimer">Demo messages are fictional. This board stays in your browser and does not communicate with a server.</p>
+          <button class="menu-btn load-demo-btn">Load Demo</button>
+          <button class="menu-btn import-btn">Import Packet</button>
+          <input type="file" id="packet-file-input" accept="application/json,.json" hidden aria-label="Choose JSON packet to import" />
+          <button class="menu-btn export-btn">Export Packet</button>
+          <button class="menu-btn danger clear-btn">Clear All</button>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <div class="room-header">
+          <div class="room-title">Lobby</div>
+          <div class="room-description">General discussion area</div>
+        </div>
+
+        <div class="messages-section scrollbar">
+          <div class="messages-list"></div>
+        </div>
+
+        <form class="post-form">
+          <div class="form-group">
+            <label for="author">Author:</label>
+            <input type="text" name="author" id="author" placeholder="Your name (optional)" />
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject:</label>
+            <input type="text" name="subject" id="subject" placeholder="Message subject" />
+          </div>
+
+          <div class="form-group">
+            <label for="content">Message:</label>
+            <textarea name="content" id="content" placeholder="Your message here..." required></textarea>
+          </div>
+
+          <div class="form-buttons">
+            <button type="submit">Post Message</button>
+            <button type="reset">Clear</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="reply-modal">
+      <div class="modal-content">
+        <button class="close-btn">✕</button>
+        <div class="modal-title">Reply to Message</div>
+        <form class="reply-form">
+          <div class="form-group">
+            <label for="reply-author">Author:</label>
+            <input type="text" name="reply-author" id="reply-author" placeholder="Your name (optional)" />
+          </div>
+          <div class="form-group">
+            <label for="reply-content">Reply:</label>
+            <textarea name="reply-content" id="reply-content" placeholder="Your reply here..." required></textarea>
+          </div>
+          <div class="form-buttons">
+            <button type="submit">Send Reply</button>
+            <button type="reset">Clear</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./src/app.js?v=20261120-v6"></script>
+</body>
+</html>
